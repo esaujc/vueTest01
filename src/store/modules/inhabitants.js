@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { getAllInhabitants } from '../../services/inhabitants';
+import { getAllInhabitants } from '../../api/inhabitants';
 import {FETCH_INHABITANTS} from '../types/actions'
 import {FETCH_INHABITANTS_END} from '../types/mutations'
 
@@ -16,6 +16,7 @@ export default({
       [FETCH_INHABITANTS_END] (state, {inhabitants}){
         state.inhabitantsList = inhabitants;
         state.inhabitantsRaw = inhabitants;
+        console.log('Lo que viene: ',inhabitants);
       }
   },
   actions: {
