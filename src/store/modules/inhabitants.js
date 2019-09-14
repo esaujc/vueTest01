@@ -14,9 +14,9 @@ export default({
   },
   mutations: {
       [FETCH_INHABITANTS_END] (state, {inhabitants}){
-        state.inhabitantsList = inhabitants;
-        state.inhabitantsRaw = inhabitants;
-        console.log('Lo que viene: ',inhabitants);
+        state.inhabitantsList = inhabitants.Brastlewark;
+        state.inhabitantsRaw = inhabitants.Brastlewark;
+        console.log('Lo que viene: ',inhabitants.Brastlewark);
       }
   },
   actions: {
