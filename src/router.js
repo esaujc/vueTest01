@@ -17,6 +17,11 @@ export default new Router({
       path: '/inhabitants',
       name: 'Inhabitants',
       component: () => import('./views/Inhabitants.vue')
+    },
+    {
+      path:'/inhabitants/:id',
+      name: 'Inhabitant',
+      component: () => import('./views/Inhabitant.vue')
     }
   ]
 })
